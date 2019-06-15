@@ -5,8 +5,8 @@ const minimist = require('minimist');
 
 const entries = {};
 const config = {
-	string: 'env',
-	default: { env: process.env.NODE_ENV || 'dev'}
+  string: 'env',
+  default: { env: process.env.NODE_ENV || 'dev'}
 }
 const options = minimist(process.argv.slice(2), config);
 let isProd = (options.env === 'prod') ? true : false;
@@ -18,9 +18,9 @@ if ( isProd ) {
 }
 
 glob.sync('./src/site/**/*.js', {
-	ignore: './src/**/_*.js'
+  ignore: './src/**/_*.js'
 }).map(function(file) {
-	const regExp = new RegExp(`./src/site/scripts/`);
+  const regExp = new RegExp(`./src/site/scripts/`);
   const key = file.replace(regExp, 'js/');
   entries[key] = ['babel-polyfill', file];
 });

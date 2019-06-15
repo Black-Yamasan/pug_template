@@ -102,7 +102,7 @@ gulp.task('default', gulp.series(
       return runSequence(
         'sass',
         'bs-reload'
-      );
+      )
     });
     watch(['src/**/*.js'], () => {
       return runSequence(
