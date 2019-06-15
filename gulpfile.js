@@ -36,7 +36,7 @@ gulp.task('browser-sync', () => {
 gulp.task('pug', () => {
   return gulp.src(['src/site/template/pages/**/*.pug', '!src/site/**/_*.pug'])
   .pipe(plumber({
-    errorHandler: notify.onError('Errir: <%= error.message %>')
+    errorHandler: notify.onError('Error: <%= error.message %>')
   }))
   .pipe(pug({
     pretty: true
