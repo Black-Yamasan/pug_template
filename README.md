@@ -1,4 +1,4 @@
-# ejs-template
+# pug_template
 テンプレートエンジン「pug」を使用したテンプレート
 
 
