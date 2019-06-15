@@ -1,0 +1,39 @@
+{
+  "name": "pug_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx gulp build --env dev",
+    "prod": "npx gulp build --env prod",
+    "start": "npx gulp",
+    "lint:style": "stylelint --fix src/**/*.scss",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp4-run-sequence": "^0.3.3",
+    "jest": "^24.8.0",
+    "minimist": "^1.2.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.8.0",
+    "webpack": "^4.34.0",
+    "webpack-stream": "^5.2.1"
+  }
+}

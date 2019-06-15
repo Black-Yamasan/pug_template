@@ -1,0 +1,17 @@
+html {
+  color: $FONT_COLOR;
+  overflow-y: scroll;
+}
+
+body {
+  min-width: 1000px;
+  letter-spacing: 1.2px;
+  overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+.l-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 15px 80px 0;
+}

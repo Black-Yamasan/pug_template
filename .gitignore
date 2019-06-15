@@ -1,0 +1,4 @@
+node_modules/
+dist/*
+htdocs/*
+.DS_Store

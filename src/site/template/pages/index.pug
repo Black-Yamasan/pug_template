@@ -1,0 +1,20 @@
+extends ../_layout
+block var
+  - metas = {}
+  - metas.title = 'pug template'
+  - metas.url = ''
+  - metas.image = ''
+  - metas.description = 'pug template desciption'
+block append meta
+  +meta(metas)
+block title
+  title aaa
+block body
+  .l-wrapper
+    include ../components/_header
+
+    .l-container
+      section.sectionContent
+        h2.sectionTitle pug test index page
+
+    include ../components/_footer
